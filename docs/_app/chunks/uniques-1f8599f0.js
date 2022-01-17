@@ -1,0 +1,1 @@
+function d(n,e,i=!0){if(!Array.isArray(n))return console.error("LayerCake error: Input value to `uniques` must be a list."),null;const f=n.length,l=typeof e=="function",a=typeof e!="undefined",o=new Set,s=[];for(let r=0;r<f;r+=1){const t=n[r],u=l?e(t):a===!0?t[e]:t;o.has(u)||(o.add(u),s.push(i?u:t))}return s}export{d as u};
